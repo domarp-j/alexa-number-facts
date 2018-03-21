@@ -52,4 +52,25 @@ Note: These instructions are based on the developer console beta that exists as 
     - Note the format of the JSON response. The Sinatra app is telling Alexa how to reply.
     - Do not close this terminal while `server.rb` is running
 
-### Part 4 - Endpoint setup & testing
+### Part 4 - Endpoint setup
+
+1. Go back to the AWS Developer Console for Alexa
+2. Under the skil builder checklist, select "Endpoint"
+3. For the service endpoint type, select "HTTPS"
+    - AWS Lambda does not yet support Ruby, which is why we need to create our own Sinatra web service in the first place
+4. You should see two fields next to "Default Region". In the first field, enter the HTTPS ngrok URL copied above.
+5. For the second field, the SSL certificate type, select the following:
+    - "My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority"
+6. Click "Save Endpoints"
+7. Select the "Build" tab at the top, and verify that all four skill builder checklist items are green
+
+### Part 5 - Testing the skill
+
+1. Select the "Test" tab at the top, and enable testing
+2. Test Alexa by doing one of the following:
+    - Type in the commands to get Alexa's responses on your computer
+    - Speak to your Alexa-enabled device
+        - If you have an Alexa that is already connected to the same email as your AWS account, you're good to go!
+        - If not, follow these instructions to link the device to your developer account: https://developer.amazon.com/docs/custom-skills/test-a-custom-skill.html#h2_register
+
+These are the basics for setting up an Alexa skill with Ruby! Go through the [AWS custom skills documentation](https://developer.amazon.com/docs/custom-skills/understanding-custom-skills.html) to see the full depth of Alexa's capabilities.
