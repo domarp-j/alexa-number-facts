@@ -1,16 +1,17 @@
 # Alexa Sinatra Demo
 
-Based on a great guide by Maker's Academy: https://developer.amazon.com/alexa-skills-kit/makers-academy
-
 This is a quick primer for setting up an Alexa skill with Ruby! Go through the [AWS custom skills documentation](https://developer.amazon.com/docs/custom-skills/understanding-custom-skills.html) to see the full depth of Alexa's capabilities.
+
+Based on a great guide by Maker's Academy: https://developer.amazon.com/alexa-skills-kit/makers-academy
 
 ## Setup
 
-Note: These instructions are based on the developer console beta that exists as of *20 March 2017*.
+Note: These instructions are based on the developer console beta that exists as of *20 March 2018*.
 
 ### Part 1 - Initialize the skill
 
 1. Create an AWS account, if you don't have one already
+    - Note: it'll be easier to test your skill on your Alexa device if the AWS account has the same email as the Amazon account registered with the device
 2. Log in and go to the AWS Developer Console: https://developer.amazon.com/edw/home.html#/
 3. Select "Get Started" in the Alexa Skills Kit widget
 4. Click "Create Skill"
