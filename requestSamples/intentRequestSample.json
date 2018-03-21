@@ -1,0 +1,80 @@
+{
+	"version": "1.0",
+	"session": {
+		"new": true,
+		"sessionId": "",
+		"application": {
+			"applicationId": ""
+		},
+		"user": {
+			"userId": ""
+		}
+	},
+	"context": {
+		"AudioPlayer": {
+			"playerActivity": "IDLE"
+		},
+		"Display": {
+			"token": ""
+		},
+		"System": {
+			"application": {
+				"applicationId": ""
+			},
+			"user": {
+				"userId": "A"
+			},
+			"device": {
+				"deviceId": "",
+				"supportedInterfaces": {
+					"AudioPlayer": {},
+					"Display": {
+						"templateVersion": "1.0",
+						"markupVersion": "1.0"
+					}
+				}
+			},
+			"apiEndpoint": "https://api.amazonalexa.com",
+			"apiAccessToken": ""
+		}
+	},
+	"request": {
+		"type": "IntentRequest",
+		"requestId": "",
+		"timestamp": "2018-03-21T20:45:56Z",
+		"locale": "en-US",
+		"intent": {
+			"name": "YourIntentName",
+			"confirmationStatus": "NONE",
+			"slots": {
+				"slotName": {
+					"name": "slotName",
+					"value": "slotValue",
+					"confirmationStatus": "NONE"
+				},
+				"customSlotName": {
+					"name": "customSlotName",
+					"value": "customSlotValue",
+					"resolutions": {
+						"resolutionsPerAuthority": [
+							{
+								"authority": "",
+								"status": {
+									"code": ""
+								},
+								"values": [
+									{
+										"value": {
+											"name": "customSlotValue",
+											"id": ""
+										}
+									}
+								]
+							}
+						]
+					}
+				}
+			}
+		}
+	}
+}

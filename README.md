@@ -31,10 +31,15 @@ Note: These instructions are based on the developer console beta that exists as 
 6. Enter one or more **sample utterance**
     - Sample utterances are essentially the specific commands you have for a skill
     - "Alexa, ask **Recipes** *how do I make an omelet?*" => The sample utterance is *how do I make an omelet* in this case
-7. Click "Save Model", then "Build Model"
-8. Enter more intents, if you would like
-9. Click on the "Build" tab to go back to the skill builder checklist, and wait for the third step "Build Model" to go green
-10. Hold off on setting an endpoint for now
+7. Optionally, add a **slot** to any sample utterance
+    - Slots are parameters that you can add to sample utterances to make them dynamic
+    - Add curly braces around the slot in the sample utterance field => "play {song}"
+    - Define the slot under "Intent Slots", defining both the name and slot type for each slot
+    - You can create a custom slot by clicking "Add" next to "Slot Types" on the left panel, defining values as needed
+8. Click "Save Model", then "Build Model"
+9. Enter more intents, if you would like
+10. Click on the "Build" tab to go back to the skill builder checklist, and wait for the third step "Build Model" to go green
+11. Hold off on setting an endpoint for now
 
 ### Part 3 - Set up Sinatra & ngrok
 
