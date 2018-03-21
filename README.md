@@ -23,17 +23,17 @@ Note: These instructions are based on the developer console beta that exists as 
 1. On the right side, you should see a skill builder checklist. Select the first step "Invocation Name".
 2. Enter the **invocation name** of your skill
     - The invocation name is the name that Alexa will use to recognize your skill
-    - "Alexa, ask **Recipes** *how do I make an omelet?*" => The invocation name is **Recipes** in this case
+    - "Alexa, ask **fun number facts** *about the number 11*" => The invocation name is **fun number facts**
 3. Click "Save Model", then go back to the dashboard by clicking the "Build" tab on top
 4. Under the skill builder checklist, select the second step "Intents, Samples, and Slots"
 5. Create an **intent** and select "Create custom intent"
     - Intents are just the requests that will be sent to Alexa, allowing it to send a response
 6. Enter one or more **sample utterance**
     - Sample utterances are essentially the specific commands you have for a skill
-    - "Alexa, ask **Recipes** *how do I make an omelet?*" => The sample utterance is *how do I make an omelet* in this case
+    - "Alexa, ask **fun number facts** *about the number 11*"" => The sample utterance is *about the number 11*
 7. Optionally, add a **slot** to any sample utterance
     - Slots are parameters that you can add to sample utterances to make them dynamic
-    - Add curly braces around the slot in the sample utterance field => "play {song}"
+    - Add curly braces around the slot in the sample utterance field => "about the number {someNumber}"
     - Define the slot under "Intent Slots", defining both the name and slot type for each slot
     - You can create a custom slot by clicking "Add" next to "Slot Types" on the left panel, defining values as needed
 8. Click "Save Model", then "Build Model"
