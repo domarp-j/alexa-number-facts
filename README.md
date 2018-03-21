@@ -33,3 +33,23 @@ Note: These instructions are based on the developer console beta that exists as 
 7. Click "Save Model", then "Build Model"
 8. Click on the "Build" tab to go back to the skill builder checklist, and wait for the third step "Build Model" to go green
 9. Hold off on setting an endpoint for now
+
+### Part 3 - Set up Sinatra & ngrok
+
+1. If you haven't already, fork and clone this repo
+2. Run `bundle install`
+3. Download ngrok: https://ngrok.com/download
+4. Unzip downloaded contents and move `ngrok` executable to this repo
+5. Run `./ngrok http 4567` to run the Sinatra app locally on port 4567
+    - We need ngrok to give us an HTTPS URL that we can use as an endpoint for Alexa
+    - Alexa uses SSL to validate endpoints, so an HTTPS URL is mandatory
+    - ngrok will give us a convenient public URL that will directly hit `localhost:4567` on the local machine
+6. Copy the https path somewhere. We will use it shortly
+    - Look for a URL with format https://e094a487.ngrok.io
+    - Do not close this terminal while ngrok is running
+7. Open a new terminal and run `ruby server.rb`
+    - Note that `server.rb` already has a POST request defined
+    - Note the format of the JSON response. The Sinatra app is telling Alexa how to reply.
+    - Do not close this terminal while `server.rb` is running
+
+### Part 4 - Endpoint setup & testing
