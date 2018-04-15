@@ -1,6 +1,8 @@
-# Alexa Sinatra Demo
+# Alexa Sinatra Demo - Number Facts
 
 This is a quick primer for setting up an Alexa skill with Ruby! Go through the [AWS custom skills documentation](https://developer.amazon.com/docs/custom-skills/understanding-custom-skills.html) to see the full depth of Alexa's capabilities.
+
+This guide will go through building an Alexa skill called "Fun Number Facts", which you can ask for interesting facts about numbers.
 
 Based on a great guide by Maker's Academy: https://developer.amazon.com/alexa-skills-kit/makers-academy
 
@@ -34,12 +36,18 @@ Note: These instructions are based on the developer console beta that exists as 
 7. Optionally, add one or more **slots** to any sample utterance
     - Slots are parameters that you can add to sample utterances to make them dynamic
     - Add curly braces around the slot in the sample utterance field => "about the number {someNumber}"
-    - Define the slot under "Intent Slots", defining both the name and slot type for each slot
-    - You can create a custom slot by clicking "Add" next to "Slot Types" on the left panel, defining values as needed
-8. Click "Save Model", then "Build Model"
-9. Enter more intents, if you would like
-10. Click on the "Build" tab to go back to the skill builder checklist, and wait for the third step "Build Model" to go green
-11. Hold off on setting an endpoint for now
+    - Define the slot under "Intent Slots", defining both the name and slot type
+8. Optionally, you can create a **custom slot type**
+    - In the left side panel, select "Add" next to Slot Types
+    - Enter a name for the slot type (like "FactType"), then press "Create custom slot type"
+    - Add any possible values for that slot type, i.e. "trivia", "math", etc
+    - Create an intent that uses that slot type, adding curly braces like you would for a normal slot => "tell me a {factType} fact about {someNumber}"
+    - Define the new slot under "Intent Slots", defining both the name and setting its type to the custom slot type (FactType)
+    - Now, you can ask Alexa to "tell me a math fact about 11" or "tell me a trivia fact about 89"
+9. Click "Save Model", then "Build Model"
+10. Enter more intents, if you would like
+11. Click on the "Build" tab to go back to the skill builder checklist, and wait for the third step "Build Model" to go green
+12. Hold off on setting an endpoint for now
 
 ### Part 3 - Set up Sinatra & ngrok
 
