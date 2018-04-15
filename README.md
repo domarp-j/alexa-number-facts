@@ -42,7 +42,7 @@ Note: These instructions are based on the developer console beta that exists as 
     - Enter a name for the slot type (like "FactType"), then press "Create custom slot type"
     - Add any possible values for that slot type, i.e. "trivia", "math", etc
     - Create an intent that uses that slot type, adding curly braces like you would for a normal slot => "tell me a {factType} fact about {someNumber}"
-    - Define the new slot under "Intent Slots", defining both the name and setting its type to the custom slot type (FactType)
+    - Define the new slot under "Intent Slots", defining both the name and setting its type to the custom slot type, which is whichever custom slot type you just created
     - Now, you can ask Alexa to "tell me a math fact about 11" or "tell me a trivia fact about 89"
 9. Click "Save Model", then "Build Model"
 10. Enter more intents, if you would like
