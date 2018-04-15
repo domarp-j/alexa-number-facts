@@ -28,10 +28,10 @@ Note: These instructions are based on the developer console beta that exists as 
 4. Under the skill builder checklist, select the second step "Intents, Samples, and Slots"
 5. Create an **intent** and select "Create custom intent"
     - Intents are just the requests that will be sent to Alexa, allowing it to send a response
-6. Enter one or more **sample utterance**
+6. Enter one or more **sample utterances**
     - Sample utterances are essentially the specific commands you have for a skill
     - "Alexa, ask **fun number facts** *about the number 11*"" => The sample utterance is *about the number 11*
-7. Optionally, add a **slot** to any sample utterance
+7. Optionally, add one or more **slots** to any sample utterance
     - Slots are parameters that you can add to sample utterances to make them dynamic
     - Add curly braces around the slot in the sample utterance field => "about the number {someNumber}"
     - Define the slot under "Intent Slots", defining both the name and slot type for each slot
